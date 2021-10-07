@@ -6,7 +6,6 @@
     "url": "https://github.com/Jedidiah/uniform-slicezone"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "clean": "rm -r ./dist",
     "prepublish": "tsc",
