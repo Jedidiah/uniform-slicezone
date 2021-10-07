@@ -7,7 +7,6 @@
   },
   "scripts": {
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "clean": "rm -r ./dist",
     "prepublish": "tsc",
     "prepare": "husky install",
     "release": "np"
@@ -15,7 +14,9 @@
   "author": "Jedidiah",
   "license": "MIT",
   "files": [
-    "dist/"
+    "dist/",
+    "package.json",
+    "README.md"
   ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
@@ -44,15 +45,15 @@
     "react-dom": "*"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{ts,tsx,md}": "prettier --write"
   },
   "np": {
-    "yarn": false,
-    "contents": "dist"
+    "yarn": false
   },
   "keywords": [
     "prismic",
     "uniform",
     "nextjs"
-  ]
+  ],
+  "private": false
 }
