@@ -6,7 +6,7 @@ export async function fetchIntents(apiKey: string, projectId: string) {
     console.error(
       "You need to pass an api key and a project id for Uniform. Make sure that your enviroment variables are set correctly."
     );
-    return;
+    return { statusCode: 400, body: "Missing Project ID or API Key" };
   }
 
   try {
@@ -31,7 +31,7 @@ export async function fetchIntents(apiKey: string, projectId: string) {
     };
   } catch (error) {
     console.error("Error fetching Uniform intents", error);
-    return;
+    return { statusCode: 500, body: String(error) };
   }
 }
 
