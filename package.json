@@ -1,6 +1,6 @@
 {
   "name": "@jedidiah/uniform-slicezone",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Custom SliceZone component to use Uniform Personalisation with Prismic",
   "repository": {
     "url": "https://github.com/Jedidiah/uniform-slicezone"
