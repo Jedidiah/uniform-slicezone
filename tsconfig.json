@@ -6,12 +6,11 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "./dist",
+    "outDir": "./",
     "jsx": "preserve",
     "moduleResolution": "Node",
     "declaration": true
   },
-  "include": [
-    "./src"
-  ]
+  "include": ["./src"],
+  "exclude": []
 }

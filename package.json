@@ -6,8 +6,8 @@
     "url": "https://github.com/Jedidiah/uniform-slicezone"
   },
   "scripts": {
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "prepublish": "tsc",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run build",
     "prepare": "husky install",
     "release": "np"
   },
@@ -45,7 +45,7 @@
     "react-dom": "*"
   },
   "lint-staged": {
-    "*.{ts,tsx,md}": "prettier --write"
+    "*.{ts,tsx,md,json,js,jsx}": "prettier --write"
   },
   "np": {
     "yarn": false
