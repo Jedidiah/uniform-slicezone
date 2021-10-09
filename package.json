@@ -13,11 +13,6 @@
   },
   "author": "Jedidiah",
   "license": "MIT",
-  "files": [
-    "dist/",
-    "package.json",
-    "README.md"
-  ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
   "devDependencies": {
