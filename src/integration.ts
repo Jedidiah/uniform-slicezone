@@ -15,7 +15,7 @@ export async function fetchIntents(apiKey: string, projectId: string) {
   try {
     const res = await fetch(
       `https://uniform.app/api/v1/manifest?projectId=${projectId}`,
-      { method: "post", headers: { "x-api-key": apiKey } }
+      { method: "get", headers: { "x-api-key": apiKey } }
     );
 
     const data = (await res.json()) as { site: { intents: IntentVector[] } };
